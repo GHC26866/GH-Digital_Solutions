@@ -6,18 +6,14 @@
 # if the guess is correct, tell the user and end the game
 # keep track of the number of guesses
 import random
-def guess_the_number():
-    number = random.randint(1, 100)
-    guess = 0
-    attempts = 0
-    while guess != number:
-        guess = int(input("Guess the number: "))
-        attempts += 1
-        if guess > number:
-            print("Too high")
-        elif guess < number:
-            print("Too low")
-        else:
-            print(f"Correct! The number was {number}")
-            print(f"It took you {attempts} attempts")
+numbers = random.randint(1, 100)
+guesses = 0
+guess = input ("Guess a number between 1 and 100: ")
+if guess > numbers:
+    print ("Too high")
+if guess < numbers:
+    print ("Too low")
+if guess == numbers:
+    print ("Correct")
+
 
