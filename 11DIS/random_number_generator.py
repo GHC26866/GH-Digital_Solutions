@@ -6,14 +6,15 @@
 # if the guess is correct, tell the user and end the game
 # keep track of the number of guesses
 import random
-numbers = random.randint(1, 100)
-guesses = 0
-guess = input ("Guess a number between 1 and 100: ")
-if guess > numbers:
-    print ("Too high")
-if guess < numbers:
-    print ("Too low")
-if guess == numbers:
-    print ("Correct")
 
+
+numbers = random.randint(1, 100)
+guess = 0
+while guess !=numbers:
+    guess = int(input("enter a number between 1 and 100:"))
+    if guess > numbers:
+            print( "too High")
+    elif guess < numbers:
+            print("too low")
+(print ("You win skibidi sigma"))
 
